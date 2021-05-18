@@ -1,0 +1,150 @@
+.newsPage{
+	background: url(../images/news-page-bg.png);
+	background-size: cover;
+	padding-bottom: 60px;
+	.newsPageTitle{
+		padding: 35px 0;
+		padding-bottom: 20px;
+		h1{
+			position: relative;
+			display: unset;
+			&:before{
+				position: absolute;
+				top: -10px;
+				right: -30px;
+				content: url(../images/diamonds-white.png);
+			}
+		}
+		@media(min-width:768px){
+			padding: 65px 0;
+			padding-bottom: 20px; 
+		}
+	}
+	.filters{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: column;
+		@media(min-width:768px){
+			flex-direction: row;
+		}
+	}
+	.newsCategoriesFilter{
+		h2{
+			margin-bottom: 10px;
+		}
+		li{
+			list-style: none;
+		}
+		@media(min-width:768px){
+			display: flex;
+			justify-content: flex-start;
+			align-items: flex-start;
+			h2{
+				margin-right: 5px;
+				margin-bottom: 0;
+			}
+		}
+	}
+	.searchFilter{
+		margin: 20px 0;
+		position: relative;
+		input{
+			border: 0;
+			padding: 8px 15px;
+			width: 250px;
+			border-radius: 30px;
+			background-color: #093e41;
+			color: #fff;
+		}
+		button{
+			position: absolute;
+			top: 7px;
+			right: 10px;
+			background: transparent;
+			border: 0;
+			color: #fff;
+			cursor: pointer;
+		}
+		::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+			color: #fff;
+		}
+		::-moz-placeholder { /* Firefox 19+ */
+			color: #fff;
+		}
+		:-ms-input-placeholder { /* IE 10+ */
+			color: #fff;
+		}
+		:-moz-placeholder { /* Firefox 18- */
+			color: #fff;
+		}
+	}
+	.newsPosts{
+		max-width: 1220px;
+		margin: auto;
+		@media(min-width:768px){
+			padding: 0 20px;
+			display: flex;
+			justify-content: space-between;
+			align-items: stretch;
+			flex-wrap: wrap;
+		}
+	}
+	.newsPost{
+		margin-bottom: 30px;
+		background: #fff;
+		.newsPostImage{
+			@include proportion(320, 200);
+			a{
+				display: block;
+				position: absolute;
+				height: 100%;
+				top: 0;
+				width: 100%;
+			}
+			@media(min-width:768px){
+				@include proportion(620, 250);
+				//width: 70%;
+			}
+		}
+		.newsPostText{
+			padding: 50px 30px;
+			.newsPostTextCategory{
+				p{
+					a{
+						&:hover{
+							color: lighten($primary,5%);
+						}
+					}
+				}
+			}
+		}
+		@media(min-width:768px){
+			width: 48%;
+		}
+		&:first-child{
+			width: 100%;
+			.newsPostImage{
+				
+				@media(min-width:768px){
+					@include proportion(620, 250);
+					width: 70%;
+				}
+			}
+			.newsPostText{
+				@media(min-width:768px){
+					width: 30%;
+				}
+			}
+			@media(min-width:768px){
+				display: flex;
+				justify-content: space-between;
+				align-items: stretch;
+			}
+		}
+	}
+	.showMore{
+		display: none;
+		padding: 40px 0;
+	}
+}

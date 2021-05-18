@@ -1,0 +1,183 @@
+footer{
+	border-top: 5px solid #e1e1e1;
+}
+.preFooter{
+	position: relative;
+	background-color: #383940;
+	padding: 45px 0 55px;
+	p{
+		margin-bottom: 0px;
+	}
+}
+
+.mainFooter{
+	background: url(../images/footer-bg.png) center center;
+	background-size: cover;
+	padding: 45px 0;
+	.footerLogo {
+		margin-bottom: 30px;
+		img{
+			margin-bottom: 15px;
+			max-width: 200px;
+			@media(min-width:1024px){
+				max-width: 100%;
+			}
+		}
+		.newsletterFooter{
+			margin-top: 20px;
+			text-align: center;
+			position: relative;
+			p{
+			color: #ffffff;
+			font-size: 16px;
+			font-weight: 400;
+			text-transform: uppercase;
+			letter-spacing: 1.2px;
+			}
+			input{
+				width: 100%;
+				background: none;
+				border: 1px solid #00df83;
+				padding: 10px 20px;
+				border-radius: 20px;
+				color: #fff;
+				font-size: 14px;
+				&::placeholder{
+					color: #fff;
+					opacity: 1;;
+				}
+			}
+			button{
+				cursor: pointer;
+				background: none;
+				border: 0;
+				position: absolute;
+				bottom: 8px;
+				right: 10px;
+				img{
+					margin-bottom: 0;
+				}
+			}
+			@media(min-width:768px){
+				text-align: left;
+			}
+		}
+		@media(min-width:768px){
+			width: 23%;
+		}
+	}
+	.footerAddress{
+		address{
+			color: #ffffff;
+			font-size: 18px;
+			font-weight: 500;
+			line-height: 22.71px;
+			text-transform: uppercase;
+			letter-spacing: 2.17px;
+			span{
+				display: block;
+				margin-bottom: 20px;
+			}
+		}
+		.meiaKitLinkFooter{
+			display: block;
+			padding-top: 20px;
+			margin-bottom: 30px;;
+			color: #00df83;
+			font-size: 18px;
+			font-weight: 400;
+			text-transform: uppercase;
+			letter-spacing: 2.17px;
+			@media(min-width:768px){
+				margin-bottom: 0;
+			}
+		}
+		@media(min-width:768px){
+			width: 33%;
+			text-align: left;
+		}
+	}
+	.footerCopyright{
+		.footerSocial{
+			margin-bottom: 30px;
+			a{
+				display: inline-block;
+				margin-right: 10px;
+			}
+		}
+		.copyright{
+			color: #ccc;
+			font-size: 16px;
+			font-weight: 100;
+			font-style: italic;
+			line-height: 27.45px;
+			letter-spacing: 0.45px;
+		}
+		.madeBy{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 25px;
+			.logoDppa{
+				transition: all 0.5s ease;
+				width: 55px;
+				height: 50px;
+				margin: 0 15px;
+				background: url(../images/sprite-logo-dppa.png) top center;
+				&:hover{
+					background-position: bottom center;
+				}
+			}
+			span{
+				display: inline-block;
+			}
+			@media(min-width:768px){
+				justify-content: flex-start;
+			}
+		}
+		@media(min-width:768px){
+			width: 28%;
+			text-align: left;
+		}
+	}
+	// address{
+	// 	span{
+	// 		display: block;
+	// 		margin-bottom: 25px;
+	// 	}
+	// 	@media(min-width:1024px){
+	// 		display: flex;
+	// 		justify-content: flex-end;
+	// 		align-items: flex-start;
+	// 		flex-wrap: wrap;
+	// 		span:first-child{
+	// 			width: 100%;
+	// 		}
+	// 	}
+	// }
+	// .copyright {
+	// 	margin-bottom: 25px;
+	// 	@media(min-width:1024px){
+	// 		margin-left: 115px;
+	// 	}
+	// }
+	// 
+	// 	
+	// 	@media(min-width:1024px) {
+	// 		flex-direction: row;
+	// 		justify-content: flex-end;
+	// 	}
+	// }
+	@media(min-width:1024px){
+		padding-top: 100px;
+		.container{
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+			flex-wrap: wrap;
+		}
+		// .footerContent{
+		// 	max-width: 68%;
+		// }
+	}
+}

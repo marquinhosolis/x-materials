@@ -1,0 +1,352 @@
+.coverHome{
+	border-bottom: 8px solid #12c27d; 
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	padding: 35px 0;
+	padding-top: 100px; 
+	.coverContent{
+		@media(min-width:768px){
+			width: 50%;
+		}
+	}
+	.logoCover{
+		max-width: 120px;
+		margin: auto;
+		margin-bottom: 30px;
+		@media(min-width:768px){
+			max-width: 230px;
+		}
+	}
+	h1{
+		position: relative;
+		display: unset;
+		&:before{
+			position: absolute;
+			top: -10px;
+			left: -30px;
+			content: url(../images/diamonds-white.png);
+		}
+		&:after{
+			content: '';
+			display: block;
+			margin-bottom: 20px;
+		}
+	} 
+	h2{
+		margin-bottom: 20px;
+	}
+	@media(min-width:768px){
+		height: auto;
+		padding: 130px 0;  
+	}
+}
+
+.IconsAndAdvanecdMaterials{
+	background: #eeeeee;
+	@media(min-width:768px){
+		.container{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+	.icons{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+		@media(min-width:768px){
+			width: 48%;
+			max-width: 500px;
+		}
+	}
+	.icon {
+		margin-bottom: 40px;
+		width: 100%;
+		@media(min-width:360px){
+			width: 48%;
+		}
+		@media(min-width:768px){
+			width: 45%;
+		}
+	}
+	.iconImage{
+		margin-bottom: 15px;
+	}
+	.advancedMaterials{
+		@media(min-width:768px){
+			width: 48%;
+			max-width: 500px;
+		}
+		h2{
+			margin-bottom: 25px;
+		}
+		.btn-primary {
+			margin-top: 20px;
+		}
+	}
+}
+
+.unlimitedPossibilities{
+	background: url(../images/unlimitedPossibilities-bgfull.png) bottom center no-repeat;
+	background-size: cover;
+	padding-bottom: 80px;
+	.unlimitedPossibilitiesIntroText{
+		position: relative;
+		z-index: 2;
+		max-width: 850px;
+		width: 90%;
+		margin: auto;
+		margin-bottom: 25px;
+		h2{
+			position: relative;
+			display: unset;
+			&:before{
+				position: absolute;
+				top: -10px;
+				right: -30px;
+				content: url(../images/diamonds-white.png);
+			}
+			&:after{
+				content: '';
+				display: block;
+				margin-bottom: 0px;
+			}
+		}
+		@media(min-width: 768px){
+			margin-bottom: 55px;
+		}
+	}
+	.unlimitedPossibilitiesGreenTab{
+		position: relative;
+		z-index: 2;
+		padding: 15px;
+		border-radius: 24px 24px 0 0;
+		background-color: #11c07c;
+		width: 90%;
+		max-width: 670px;
+		margin: auto;
+		p{
+			margin: 0;
+		}
+		@media(min-width: 768px){
+			padding: 35px;
+		}
+	}
+	.unlimitedPossibilitiesWrapper{
+		.unlimitedPossibilitiesItem{
+			display: block;
+			padding: 80px;
+			background: #fff;
+			color: #3d3d3d;
+			font-size: 18px;
+			font-weight: 300;
+			position: relative;
+			text-align: center;
+			h4{
+				font-weight: 500;
+				font-size: 30px;
+				color: #373737;	
+				margin-bottom: 10px;
+				text-transform: uppercase;
+			}
+			h5{
+				font-weight: 500;
+				font-size: 16px;
+				color: #373737;
+				margin-bottom: 10px;
+				text-transform: uppercase;
+			}
+			div{
+				display: none;
+				@media(min-width:1200px){
+					display: block;
+				}
+			}
+			.unlimitedPossibilitiesItemCover{
+				opacity: 1;
+				@include animation(0.25s);
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background-size: cover;
+				background-position: center center;
+				h3{
+					position: relative;
+					text-transform: uppercase;
+					font-size: 36px;
+					font-weight: 700;
+					color: #fff;
+					&:after{
+						position: absolute;
+						top: -10px;
+						left: -30px;
+						content: url(../images/diamonds-white.png);
+					}
+				}
+				&:hover{
+					opacity: 0;
+				}
+			}
+			@media(min-width: 768px){
+				width: 33.33%;
+			}
+			@media(min-width: 1200px){
+				text-align: left;
+			}
+		}
+		.seeMoreAplicationsLink{
+			width: 100%;
+			text-align: center;
+			margin-top: 60px;
+		}
+		@media(min-width: 768px){
+			display: flex;
+			align-items: stretch;
+			flex-wrap: wrap;
+			padding-bottom: 5px;
+		}
+	}
+
+	@media(min-width: 768px){
+		padding-top: 90px;
+		background-size: cover;
+	}
+}
+
+.featuredNews{
+	background: #e1e1e1;
+	padding: 30px 0;
+	h2{
+		position: relative;
+		display: unset;
+		margin-bottom: 40px;
+		&:before{
+			position: absolute;
+			top: -10px;
+			right: -30px;
+			content: url(../images/diamonds-green.png);
+		}
+		&:after{
+			content: '';
+			display: block;
+			background: red;
+			margin-bottom: 40px;
+		}
+	}
+	.homeNews{
+		margin-bottom: 30px;
+		@media(min-width: 768px){
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+	.homeNew{
+		margin-bottom: 15px;
+		background-size: cover;
+		.photo{
+			@include proportion(16, 9);
+		}
+		.content {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-image: url(../images/gradient-news.png);
+			background-size: cover;
+			p{
+				max-width: 600px;
+				margin: auto;
+				margin-bottom: 15px;
+			}
+			h3{
+				margin: auto;
+				margin-bottom: 10px;
+				max-width: 500px;
+			}
+		}
+		@media(min-width: 768px){
+			width: 49.5%;
+		}
+		&:hover{
+			.content {
+				h3{
+					max-width: 600px;   
+				}
+			}
+		}
+	}
+	.viewMoreNews{
+		.fa{
+			position: relative;
+		}
+		@media(min-width: 768px){
+			&:hover{
+				.fa{
+					right: -10px;
+				}
+			}
+		}
+	}
+	@media(min-width:768px){
+		padding: 80px 0;
+	}
+} 
+
+.featuredOn{
+	background: #fff;
+	padding: 30px 0;
+	h2{
+		position: relative;
+		display: unset;
+		margin-bottom: 40px;
+		&:before{
+			position: absolute;
+			top: -10px;
+			right: -30px;
+			content: url(../images/diamonds-green.png);
+		}
+		&:after{
+			content: '';
+			display: block;
+			background: red;
+			margin-bottom: 40px;
+		}
+	}
+	.featuredMediaWrapper{
+		display: flex;
+		align-items: stretch;
+		justify-content: center;
+		flex-wrap: wrap;
+		.featuredMedia{
+			background: #f2f4f5 ;
+			padding: 30px;
+			width: calc(33% - 10px);
+			margin:  5px;
+			display: flex;
+			align-items: center;
+			text-align: center;
+			a{
+				display: block;
+				width: 100%;
+			}
+			img{
+				margin: auto;
+			}
+			@media(min-width: 768px){
+				width: calc(25% - 10px);
+			}
+		}
+		
+	}
+	@media(min-width:768px){
+		padding: 80px 0;
+	}
+} 

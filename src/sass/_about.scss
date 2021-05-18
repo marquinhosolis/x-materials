@@ -1,0 +1,209 @@
+.aboutPage{
+	background: url(../images/background.png) center center;
+	background-size: cover;
+	.aboutCover{
+		position: relative;
+		padding-top: 150px;
+		background-repeat: no-repeat;
+		background-position: top right;
+		background-size: 100% auto;
+		h1{
+			position: relative;
+			display: inline-block;
+			margin-bottom: 20px;
+			&:before{
+				position: absolute;
+				top: -10px;
+				right: -30px;
+				content: url(../images/diamonds-white.png);
+			}
+		}
+		@media(min-width:768px){
+			padding-top: 230px;
+			padding-bottom: 60px;
+			background-size: 75% auto;
+			.coverAboutContent{
+				max-width: 750px;	
+				.btn-primary {
+					margin-top: 30px;
+					position: static;
+				}
+			}
+		}
+	}
+	
+	.aboutHours{
+		background-color: #eeeeee;
+		.container{
+			@media(min-width: 768px){
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+		.aboutHoursImage{
+			max-width: 200px;
+			margin: 20px auto;
+			@media(min-width: 768px){
+				max-width: 100%;
+				margin: 20px;	
+			}
+		}
+		.aboutHoursText {
+			max-width: 500px;
+			margin: 0 20px;
+			h2{
+				margin: 20px 0;
+			}
+		}
+	}
+	
+	.aboutTeam{
+		padding-bottom: 0;
+		position: relative;
+		&:before{
+			content: url(../images/about-team-image-before.png);
+			position: absolute;
+			top: -2px;
+			right: 0;
+			left: 0;
+			margin: auto;
+			text-align: center;
+		}
+		h2{
+			margin: 50px 0 20px 0;
+			@media(min-width:768px){
+				margin-top: 90px;	
+			}
+		}
+		.team-title-after{
+			max-width: 60%;
+			margin: auto;
+			margin-bottom: 50px;
+			@media(min-width:768px){
+				margin-bottom: 90px;	
+			}
+		}
+		.member{
+			background-color: #eeeeee;
+			border-bottom: darken($primary, 10%) solid 5px;
+			.memberImage{
+				@include proportion(320, 150);
+				@media(min-width:768px){
+					position: relative;
+					width: 40%;
+					&:after{
+						content: url(../images/member-image-after.png);
+						//display: inline-block;
+						position: absolute;
+						margin: auto;
+						bottom: calc(50% - 32px);
+						right: -2px;
+					}
+				}
+			}
+			.memberText{
+				padding: 30px 20px;
+				h3{
+					max-width: 520px;
+					margin: auto;
+					margin-bottom: 20px;
+				}
+				p{
+					max-width: 520px;
+					margin: auto;
+				}
+				@media(min-width:768px){
+					width: 60%;
+					padding: 60px 20px;
+				}
+			}
+			@media(min-width:768px){
+				display: flex;
+				justify-content: space-between;
+				align-items: stretch;
+			}
+			&:nth-child(even){
+				flex-direction: row-reverse;
+				.memberImage{
+					&:after{
+						left: -2px;
+						right: auto;
+						transform: rotate(180deg);
+					}
+				}
+			}
+		}
+	}
+	
+	.aboutValues{
+		h2{
+			position: relative;
+			display: inline-block;
+			margin-bottom: 40px;
+			&:before{
+				position: absolute;
+				top: -10px;
+				left: -30px;
+				content: url(../images/diamonds-white.png);
+			}
+			&:after{
+				content: "";
+				position: absolute;
+				right: 0;
+				bottom: -10px;
+				display: inline-block;
+				height: 2px; 
+				width: 60%;
+				background: #fff;
+				opacity: 0.59;
+			}
+			@media(min-width:768px){
+				margin-bottom: 60px;
+			}
+		}
+		p{
+			max-width: 775px;
+			margin: 20px auto;
+		}
+		.aboutValuesFinalParagraph{
+			max-width: 685px;
+			margin: auto;
+		}
+		.values{
+			margin: 30px 0;
+			background: #04726c;
+			padding: 25px 0 0 0;
+			.container{
+				display: flex;
+				justify-content: space-between;
+				align-items: flex-start;
+				flex-wrap: wrap;
+			}
+			.value{
+				width: 46%;
+				margin-bottom: 25px;
+				@media(min-width:768px){
+					width: 22%;
+				}
+			}
+			@media(min-width:768px){
+				margin-top: 50px;
+			}
+		}
+		@media(min-width:768px){
+			padding: 120px 0;
+			padding-bottom: 60px;
+		}
+	}
+	 
+	.aboutBusiness {
+		@include proportion(320, 1064);
+		background-color: #000;
+		background-size: auto 100% !important;
+		@media(min-width:768px){
+			@include proportion(1400, 775);
+			background-size: 100% auto !important;
+		}
+	}
+}

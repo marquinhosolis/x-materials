@@ -1,0 +1,92 @@
+$primary : #08bf78;
+
+@mixin animation($duration){
+    -webkit-transition: all $duration linear;
+    -moz-transition: all $duration linear;
+    -ms-transition: all $duration linear;
+    -o-transition: all $duration linear;
+    transition: all $duration linear;
+}
+
+@mixin proportion($width, $height) {
+	position: relative;
+	background-size: cover;
+	background-position: center center;
+	&:before {
+		display: block;
+		content: "";
+		width: 100%;
+		padding-top: ($height / $width) * 100%;
+	}
+	> .content {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}
+
+.container{
+    max-width: 1220px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+body, html{
+	height: 100%;
+}
+
+body {
+	overflow-x: hidden;
+	padding-top: 60px;
+	@media(min-width:992px){
+		padding-top: 75px;
+	}
+}
+
+p{
+	margin-bottom: 15px;
+}
+
+.btn-primary{
+	display: inline-block;
+	padding: 10px 20px !important;
+	border-radius: 30px !important;
+	border: 0 !important;
+	background: $primary !important;
+	color: #ffffff !important;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-align: center;
+	box-shadow: none !important;
+	&:hover{
+		background-color: lighten($primary, 5%) !important;
+	}
+	@media(min-width:992px){
+		font-size: 18px; 
+		padding: 13px 30px !important;
+	}
+}
+
+.btn-float{
+	position: absolute;
+	bottom: -20px;
+	max-width: 330px;
+	right: 0;
+	left: 0;
+	margin: auto;
+	@media(min-width:768px){
+		max-width: 430px;
+	}
+}
+
+section{
+	padding: 50px 0;
+}
+
+.emptySearch{
+	padding: 30px 0 80px 0;
+	width: 100%;
+}

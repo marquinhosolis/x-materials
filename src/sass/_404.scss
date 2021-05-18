@@ -1,0 +1,26 @@
+.page404{
+	background: url(../images/404-bg.png) center center;
+	background-size: cover;
+	min-height: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	.container{
+		height: 100%;
+	}
+	h1{
+		position: relative;
+		display: unset;
+		margin-bottom: 35px;
+		&:before{
+			position: absolute;
+			top: -10px;
+			right: -30px;
+			content: url(../images/diamonds-white.png);
+		}
+	}
+	p{
+		margin-bottom: 40px;
+	}
+}

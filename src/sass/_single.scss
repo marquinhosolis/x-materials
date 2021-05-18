@@ -1,0 +1,67 @@
+.singlePage{
+	background: url(../images/single-post-title-bg.png) no-repeat top center;
+	background-size:  250%;
+	.singlePageTitle{
+		padding: 35px 0;
+		h1{
+			margin-bottom: 10px;
+		}
+		@media(min-width:768px){
+			padding: 65px 0;
+		}
+	}
+	.postContent{
+		padding: 0;
+		max-width: 1180px;
+		margin: auto;
+		
+	}
+	.postImage{
+		@include proportion(320, 235);
+		@media(min-width:768px){
+			@include proportion(1170, 450);
+		}
+		
+	}
+	.postText{
+		max-width: 820px;
+		margin: 30px auto;
+		@media(min-width:992px){
+			margin: 60px auto;
+		}
+		@media(min-width:1024px){
+			position: relative;
+		}
+	}
+	.share{
+		margin: 30px 0;
+		a{
+			&:hover{
+				color: $primary !important;	
+			}
+		}
+		@media(min-width:1024px){
+			margin: 0;
+			position: absolute;
+			top: 0;
+			left: -100px;
+			i{
+				display: block;
+			}
+		}
+	}
+	.postPagination{
+		margin-bottom: 30px;
+		.container{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		@media(min-width:768px){
+			margin-bottom: 60px;
+		}
+	}
+	@media(min-width:992px){
+		background-size: 100%;
+	}
+}

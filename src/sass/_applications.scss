@@ -1,0 +1,210 @@
+.applicationPage{
+	background: url(../images/background.png) center center;
+	background-size: cover;
+}
+
+.applicationCover{
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-image: url(../images/applications.png);
+	h1{
+		position: relative;
+		display: inline-block;
+		margin-bottom: 20px;
+		max-width: 400px;
+		&:before{
+			position: absolute;
+			top: -30px;
+			left: -30px;
+			content: url(../images/diamonds-white.png);
+		}
+	}
+	&:after{
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 35px;
+		background: url(../images/applications-cover-after.png) center center;
+		bottom: -1px;
+		margin: auto;
+		text-align: center;
+	}
+	@media(min-width:768px){
+		padding-top: 230px;
+		padding-bottom: 60px;
+		.coverApplicationContent{
+			max-width: 750px;	
+			.btn-primary {
+				margin-top: 30px;
+				position: static;
+			}
+		}
+	}
+}
+
+.currentApplications{
+	background-color: #eeeeee;
+	padding-top: 30px;
+	.currentApplicationsTitle{
+		h2{
+			margin-bottom: 15px;
+		}
+		img{
+			margin-bottom: 50px;
+		}
+	}
+	.applicationBigImage{
+		@include proportion(320, 225);
+		@media(min-width:768px){
+			@include proportion(1400, 465);
+		}
+	}
+	.application{
+		margin-bottom: 30px;
+		.applicationBigImage{
+			margin-bottom: 50px;
+			@media(min-width:768px){
+				margin-bottom: 100px;
+			}
+		}
+		.container{
+			@media(min-width:768px){
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+		.applicationLogo{
+			max-width: 140px;
+			margin-bottom: 20px;
+			@media(min-width:768px){
+				margin-bottom: 0;
+				max-width: 250px;	
+				margin-right: 50px;
+			}
+		}
+		.applicationBigContent{
+			max-width: 680px;
+		}
+		@media(min-width:768px){
+			///margin-bottom: 80px;
+		}
+	}
+}
+
+.applicationPage{
+	.unlimitedPossibilities{
+		background-image: url(../images/unlimited-possibilities-bg.png);
+		background-size: cover;
+		h2{
+			position: relative;
+			display: unset;
+			&:before{
+				position: absolute;
+				top: -10px;
+				right: -30px;
+				content: url(../images/diamonds-white.png);
+			}
+			&:after{
+				content: '';
+				display: block;
+				background: red;
+				margin-bottom: 40px;
+			}
+		}
+		h3{
+			margin-bottom: 10px;
+		}
+		p{
+			max-width: 700px;
+			margin: 10px auto;
+		}
+		.posibilitiesFirst{
+			margin-top: 30px;
+			margin-bottom: 50px;
+			background-color: rgba(54,54,54,0.8);
+			padding: 25px 0 10px 0;
+			p{
+				display: inline-block;
+				position: relative;
+				&:before{
+					content: "";
+					position: absolute;
+					display: inline-block;
+					width: 500%;
+					height: 2px;
+					background-color: #ebebeb;
+					top: 50%;
+					left: -508%;
+					 opacity: 0.25;
+				}
+				&:after{
+					content: "";
+					position: absolute;
+					display: inline-block;
+					width: 500%;
+					height: 2px;
+					background-color: #ebebeb;
+					top: 50%;
+					right: -508%;
+					opacity: 0.25;
+				}
+			}
+			.container{
+				overflow: hidden;
+			}
+			/*p{
+				display: inline-block;
+				position: relative;
+				&:before{
+					content: "";
+					position: absolute;
+					display: inline-block;
+					width: 600%;
+					height: 2px;
+					background-color: #ebebeb;
+					top: 50%;
+					left: -604%;
+					opacity: 0.25;
+				}
+				&:after{
+					content: "";
+					position: absolute;
+					display: inline-block;
+					width: 600%;
+					height: 2px;
+					background-color: #ebebeb;
+					top: 50%;
+					right: -604%;
+					opacity: 0.25;
+				}
+				@media(min-width: 768px){
+					margin-bottom: 30px;
+				}
+				
+			}*/
+			@media(min-width: 768px){
+				padding: 35px 0;
+			}
+			
+		}
+		.posibilitiesScnd{
+			overflow: auto;
+			@extend .posibilitiesFirst;
+			margin-top: 50px;
+			margin-bottom: 0;
+			@media(min-width: 768px){
+				.posibilitiesScndPWrapper{
+					width: 50%;
+					float: left;
+					overflow: hidden;
+				}
+				//-moz-column-count: 2;
+				//-webkit-column-count: 2;
+				//column-count: 2;
+			}
+		}
+	}
+}
